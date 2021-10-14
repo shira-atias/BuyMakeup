@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="131" id="KGk-i7-Jjw" customClass="ItemTableViewCell" customModule="Buy_Makeup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384.5" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-2Z-ES6">
+                        <rect key="frame" x="267.5" y="20" width="109" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="109" id="Atc-ox-p4a"/>
+                            <constraint firstAttribute="width" constant="109" id="D0K-RC-E2s"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oc-f1-L8O">
+                        <rect key="frame" x="8" y="8" width="229.5" height="37"/>
+                        <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAr-NS-GsP">
+                        <rect key="frame" x="8" y="45" width="229.5" height="28.5"/>
+                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-2O-eil">
+                        <rect key="frame" x="8" y="82.5" width="89" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSL-iN-88p">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="37"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="22"/>
+                                <color key="textColor" red="0.74904805419999998" green="0.56490236520000003" blue="0.75296086070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTC-ZE-3b8">
+                                <rect key="frame" x="48" y="0.0" width="41" height="37"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="22"/>
+                                <color key="textColor" red="0.74904805419999998" green="0.56490236520000003" blue="0.75296086070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wum-2o-1x2">
+                        <rect key="frame" x="239" y="95" width="20.5" height="22"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                        <connections>
+                            <action selector="heartButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VOK-N7-O0F"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CzK-2Z-ES6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="2SB-bn-ADT"/>
+                    <constraint firstAttribute="bottom" secondItem="yYv-2O-eil" secondAttribute="bottom" constant="11.5" id="2ww-cS-EjW"/>
+                    <constraint firstItem="iAr-NS-GsP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5dw-as-XB2"/>
+                    <constraint firstItem="CzK-2Z-ES6" firstAttribute="leading" secondItem="iAr-NS-GsP" secondAttribute="trailing" constant="30" id="E7K-s8-VWb"/>
+                    <constraint firstItem="iAr-NS-GsP" firstAttribute="top" secondItem="6oc-f1-L8O" secondAttribute="bottom" id="MmK-3O-nyT"/>
+                    <constraint firstItem="CzK-2Z-ES6" firstAttribute="leading" secondItem="Wum-2o-1x2" secondAttribute="trailing" constant="8" id="NET-0t-mTU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Wum-2o-1x2" secondAttribute="bottom" constant="3" id="OfC-CJ-yHe"/>
+                    <constraint firstItem="6oc-f1-L8O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="byg-Br-eet"/>
+                    <constraint firstItem="yYv-2O-eil" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="d21-l3-Cz8"/>
+                    <constraint firstItem="6oc-f1-L8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="fIh-j2-GyT"/>
+                    <constraint firstItem="CzK-2Z-ES6" firstAttribute="leading" secondItem="6oc-f1-L8O" secondAttribute="trailing" constant="30" id="kDb-5e-QUj"/>
+                    <constraint firstAttribute="trailing" secondItem="CzK-2Z-ES6" secondAttribute="trailing" constant="8" id="xkX-6H-rba"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brandLabel" destination="6oc-f1-L8O" id="w5d-hH-otT"/>
+                <outlet property="heartButton" destination="Wum-2o-1x2" id="UIH-hO-RwX"/>
+                <outlet property="nameLabel" destination="iAr-NS-GsP" id="xND-lR-s7T"/>
+                <outlet property="priceLabel" destination="ZSL-iN-88p" id="YPm-N5-7Pg"/>
+                <outlet property="signLabel" destination="BTC-ZE-3b8" id="pOE-FE-suk"/>
+                <outlet property="tableImageView" destination="CzK-2Z-ES6" id="l1x-25-3Ex"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

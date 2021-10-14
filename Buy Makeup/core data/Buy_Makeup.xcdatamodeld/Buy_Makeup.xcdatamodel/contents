@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ProductColorD" representedClassName="ProductColorD" syncable="YES">
+        <attribute name="colorName" optional="YES" attributeType="String"/>
+        <attribute name="hexValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProductD" representedClassName="ProductD" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageLink" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="priceSign" optional="YES" attributeType="String"/>
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <relationship name="productColor" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductColorD"/>
+    </entity>
+    <elements>
+        <element name="ProductColorD" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="ProductD" positionX="-54" positionY="9" width="128" height="149"/>
+    </elements>
+</model>
